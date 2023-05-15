@@ -12,7 +12,6 @@ import "./styles/Home.scss";
 import "./styles/Footer.scss";
 import "./styles/Contact.scss";
 import "./styles/MediaQuery.scss";
-import Footer from './components/Footer';
 
 
 function App() {

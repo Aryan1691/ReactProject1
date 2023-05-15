@@ -1,13 +1,29 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import svd from "../assets/image5.png"
 import Footer from './Footer'
+import sg from "../assets/img.png"
+import AOS from 'aos';
+ import 'aos/dist/aos.css';
+
 
 const Contact = () => {
+  useEffect(()=>{
+    AOS.init({
+      duration:1000,
+      easing:'ease-in-out',
+      once:false
+    })
+  })
   return (
     <React.Fragment>
     <div id='contact'>
-    <img id='change' src={svd} alt='huh'/>
-    <form className="form">
+    <picture>
+      <source media='(max-width:700px)' srcSet={sg}></source>
+      <source media='(max-width:1000px)' srcSet={svd}></source>
+      <img id='change' src={svd} alt='huh'/>
+
+    </picture>
+    <form className="form" data-aos="zoom-out">
     <h5 style={{textAlign:"center"}}>Contact Us</h5>
   <div className="flex">
     <label>

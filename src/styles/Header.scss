@@ -15,7 +15,17 @@ nav{
 
    h1{
         text-transform: uppercase;
+        background: linear-gradient(90deg,rgb(228, 11, 163),rgb(47, 4, 218),rgb(255, 0, 98),rgb(228, 11, 163));
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        animation-name: back;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        background-size: 200%;
+        
     }
+  
     main{
         width: 70%;
         display: flex;
@@ -28,5 +38,16 @@ nav{
         &:hover{
             color: $third;
         }
+    }
+}
+
+@keyframes back {
+    
+    to{
+        background-position: 0% center;
+
+    }
+    from{
+        background-position: -200% center;
     }
 }

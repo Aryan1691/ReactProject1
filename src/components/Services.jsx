@@ -13,6 +13,7 @@ const Services = () => {
   return (
     <div className='services'>
       <Carousel
+      
       infiniteLoop
       autoPlay
       showStatus={false}
@@ -22,8 +23,8 @@ const Services = () => {
       interval={1000}
       >
 
-<div >
-  <img src={IMG2} alt="Item1"></img>
+<div  >
+  <img   src={IMG2} alt="Item1"></img>
   <p className='legend' style={{fontSize:"50px",backgroundColor:"blue",color:"white",border:"3px solid black"}}>Services we offer</p>
 </div>
 <div>

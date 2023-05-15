@@ -1,20 +1,32 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import vg from "../assets/image3.jpg";
 import {AiFillGoogleCircle,AiFillAmazonCircle,AiFillYoutube,AiFillInstagram} from "react-icons/ai";
 import Footer from './Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Home2 = () => {
+  useEffect(()=>{
+AOS.init({
+  duration:1000,
+  easing:'ease-in-out',
+  once:false
+})
+return()=>{
+  AOS.refresh();
+}
+  },[])
   return (
     <React.Fragment>
-        <div className='home' id='Home'>
+        <div className='home' id='Home' data-aos="zoom-out">
             <main>
             <h1>TechWorld</h1>
             <p>Solution to all Your Problems</p>
             </main>
         </div>
         <div className='home2' style={{zIndex:1}}>
-            <img src={vg} alt="Graphics"/>
+            <img src={vg} alt="Graphics" data-aos="fade-up"/>
             <div>
-          <p>
+          <p data-aos="fade-bottom">
             We are your one and only solution to the 
             tech problems you face
             every day. 
@@ -24,7 +36,7 @@ const Home2 = () => {
         </div>
         </div>
         <div id='about'></div>
-        <div className='home3' >
+        <div className='home3' data-aos="fade-up" >
             <div>
                 <h1>
                     Who we are?
@@ -51,7 +63,7 @@ const Home2 = () => {
        
      
      <div id='brands'></div>
-        <div className='home4' >
+        <div className='home4' data-aos="fade-up">
           <div>
             <h1>
               Brands

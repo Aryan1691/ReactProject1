@@ -1,7 +1,7 @@
 @import "colors.scss";
 @media screen and (max-width:820px){
     #change{
-        height: 939px;
+        height: 900px;
     }
    
     .home2 div {
@@ -9,8 +9,13 @@
         padding: 1rem;
     }
     footer{
-        position: relative;
-        bottom: -15px;
+        position: absolute;
+        top: 30.5pc;
+    }
+    .form{
+        padding: 20px;
+        position:relative;
+        bottom: 30px;
     }
 }
 
@@ -47,6 +52,7 @@
          div{
             width: 100%;
          }
+         
     }
     .home3
     {margin: 5px;
@@ -91,6 +97,6 @@
             color: beige;
         }
     }
-   
+  
    
 }
