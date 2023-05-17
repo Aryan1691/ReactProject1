@@ -1,9 +1,9 @@
 import React,{useEffect} from 'react';
-import vg from "../assets/image3.jpg";
 import {AiFillGoogleCircle,AiFillAmazonCircle,AiFillYoutube,AiFillInstagram} from "react-icons/ai";
 import Footer from './Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import web from "../assets/image3.webp"
 const Home2 = () => {
   useEffect(()=>{
 AOS.init({
@@ -24,7 +24,7 @@ return()=>{
             </main>
         </div>
         <div className='home2' style={{zIndex:1}}>
-            <img src={vg} alt="Graphics" data-aos="fade-up"/>
+            <img src={web} alt="Graphics" data-aos="fade-up"/>
             <div>
           <p data-aos="fade-bottom">
             We are your one and only solution to the 
